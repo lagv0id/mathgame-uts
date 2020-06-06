@@ -1,8 +1,6 @@
 <?php
-// author: Radiance Alam Pratama K3518049
 session_start();
 require "koneksi.php";
-// cek login atau tidak
 if (!isset($_SESSION["login"])) {
     header("Location: login.php");
     exit;
